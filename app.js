@@ -1,11 +1,6 @@
-//const names = require('./names')
-//const sayHi = require('./utils')
-//const data = require('./alternative')
-require('./mind')
+const {readFileSync,writeFileSync} = require('fs');
 
+const first = readFileSync('./content/first.txt','utf-8')
+const second = readFileSync('./content/second.txt','utf-8')
 
-
-
-//sayHi('Nevin')
-//sayHi(names.pp)
-//sayHi(names.sree)     
+writeFileSync('./content/result-sync')
